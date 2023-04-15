@@ -1,9 +1,9 @@
-import { STRIPE_KEY } from './fake.env'
+// import { STRIPE_KEY } from './fake.env'
 import { MongoMemoryServer } from 'mongodb-memory-server'
 import mongoose from 'mongoose'
 import jwt from 'jsonwebtoken'
 
-process.env.STRIPE_KEY = STRIPE_KEY
+// process.env.STRIPE_KEY = STRIPE_KEY
 
 declare global {
   var signin: (id?: string) => string[]
